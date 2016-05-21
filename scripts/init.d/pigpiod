@@ -14,7 +14,7 @@ DIR=/usr/local/bin
 DAEMON=$DIR/pigpiod
 DAEMON_NAME=pigpiod
 
-DAEMON_OPTS=""
+DAEMON_OPTS="-k"
 
 # Root generally not recommended but necessary if you are using the Raspberry Pi GPIO from Python.
 DAEMON_USER=root
