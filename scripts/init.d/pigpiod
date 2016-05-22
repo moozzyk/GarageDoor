@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# BEGIN INIT INFO
+### BEGIN INIT INFO
 # Provides:          pigpiod
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
