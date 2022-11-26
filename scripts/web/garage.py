@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 
 import cgi
 import cgitb
@@ -10,8 +10,7 @@ if form.getvalue("submit"):
 	gpio.write("w 4 1 mils 1000 w 4 0\n")
 	gpio.close()
 
-print """\
-Content-Type: text/html\n
+print ("""Content-Type: text/html\n
 <html>
   <body>
     <form action="garage.py" method="POST">
@@ -21,4 +20,4 @@ Content-Type: text/html\n
     </form>
   </body>
 </html>
-"""
+""")
