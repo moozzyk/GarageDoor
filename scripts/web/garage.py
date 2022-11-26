@@ -7,7 +7,7 @@ cgitb.enable()
 form = cgi.FieldStorage()
 if form.getvalue("submit"):
 	gpio = open("/dev/pigpio", 'a')
-	gpio.write("w 4 1 mils 1000 w 4 0\n")
+	gpio.write("w 17 1 mils 1500 w 17 0\n")
 	gpio.close()
 
 print ("""Content-Type: text/html\n
